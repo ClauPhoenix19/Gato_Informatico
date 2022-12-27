@@ -26,6 +26,32 @@
 				}
 			],
 			"sid": 474260770008257
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 862770742976754,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "creditos"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 169402819430332,
+					"parameters": {
+						"layout": "Escena 3"
+					}
+				}
+			],
+			"sid": 526581911311682
 		}
 	],
 	"sid": 158534436580753

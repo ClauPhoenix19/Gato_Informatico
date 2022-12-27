@@ -1,5 +1,32 @@
 {
 	"name": "Hoja de eventos 3",
-	"events": [],
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 494971514402912,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "VOLVER"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 902433425037537,
+					"parameters": {
+						"layout": "Escena 1"
+					}
+				}
+			],
+			"sid": 813135305739071
+		}
+	],
 	"sid": 655650357508086
 }

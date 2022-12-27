@@ -53,9 +53,13 @@
 			"Sprite2",
 			"FondoEnMosaico",
 			"EntradaDeTexto",
-			"Texto",
+			"creditos",
 			"comenar",
-			"Mouse"
+			"Mouse",
+			"Texto2",
+			"Texto",
+			"Texto3",
+			"VOLVER"
 		],
 		"subfolders": []
 	},
@@ -69,7 +73,11 @@
 		"items": [
 			"Escena 1",
 			"Escena 2",
-			"Escena 3"
+			"Escena 3",
+			"Escena 4",
+			"Escena 5",
+			"Escena 6",
+			"Escena 7"
 		],
 		"subfolders": []
 	},
@@ -77,7 +85,9 @@
 		"items": [
 			"Hoja de eventos 1",
 			"Hoja de eventos 2",
-			"Hoja de eventos 3"
+			"Hoja de eventos 3",
+			"Hoja de eventos 4",
+			"Hoja de eventos 5"
 		],
 		"subfolders": []
 	},

@@ -69,7 +69,7 @@
 					}
 				},
 				{
-					"type": "Texto",
+					"type": "creditos",
 					"properties": {
 						"text": "AYUDAME A MONTAR UN PC",
 						"enable-bbcode": true,
@@ -140,6 +140,48 @@
 						"y": 321,
 						"width": 145,
 						"height": 41,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Texto2",
+					"properties": {
+						"text": "Creditos",
+						"enable-bbcode": true,
+						"font": "Agency FB",
+						"size": 26,
+						"line-height": 0,
+						"bold": true,
+						"italic": false,
+						"color": [
+							0.26666666666666666,
+							0.30196078431372547,
+							0,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 7,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 362,
+						"y": 369,
+						"width": 246,
+						"height": 63.09090909090912,
 						"originX": 0,
 						"originY": 0,
 						"color": [
