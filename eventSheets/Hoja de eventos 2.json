@@ -130,7 +130,17 @@
 											}
 										}
 									],
-									"actions": [],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "ESPACIOS",
+											"sid": 457643987637419,
+											"parameters": {
+												"instance-variable": "Pareja",
+												"value": "array.At(random(array.Width))"
+											}
+										}
+									],
 									"sid": 346401810366583
 								}
 							]
