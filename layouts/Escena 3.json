@@ -146,7 +146,9 @@
 						"origin": "top-left"
 					},
 					"uid": 11,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"Pareja": -1
+					},
 					"behaviors": {},
 					"world": {
 						"x": 382,

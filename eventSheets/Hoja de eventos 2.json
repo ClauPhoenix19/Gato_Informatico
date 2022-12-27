@@ -1,5 +1,144 @@
 {
 	"name": "Hoja de eventos 2",
-	"events": [],
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "Estado",
+			"type": "string",
+			"initialValue": "Preparar",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 918367339740733
+		},
+		{
+			"eventType": "variable",
+			"name": "Contador",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 403976943479952
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 499630954870047
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "ESPACIOS",
+					"sid": 633535208958200
+				}
+			],
+			"sid": 800223915172335,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for-each-element",
+							"objectClass": "array",
+							"sid": 675888372829891,
+							"parameters": {
+								"axes": "x"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-at-x",
+							"objectClass": "array",
+							"sid": 282421125822993,
+							"parameters": {
+								"x": "array.CurX",
+								"value": "array.CurX"
+							}
+						}
+					],
+					"sid": 993862914425383
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 768939861707413,
+					"parameters": {
+						"variable": "Estado",
+						"comparison": 0,
+						"value": "\"Preparar\""
+					}
+				}
+			],
+			"actions": [],
+			"sid": 665475468814183,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 963047817542366,
+							"parameters": {
+								"variable": "Contador",
+								"comparison": 2,
+								"value": "7"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 641886493478345,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-comparison",
+									"objectClass": "System",
+									"sid": 378997189551388,
+									"parameters": {
+										"object": "ESPACIOS",
+										"expression": "ESPACIOS.Pareja",
+										"comparison": 0,
+										"value": "-1"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 899095528994525,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "pick-random-instance",
+											"objectClass": "System",
+											"sid": 998609237333268,
+											"parameters": {
+												"object": "ESPACIOS"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 346401810366583
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
 	"sid": 652314144017403
 }

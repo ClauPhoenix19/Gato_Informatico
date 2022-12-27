@@ -45,6 +45,22 @@
 			"author": "Scirra",
 			"version": "r317.2",
 			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Arr",
+			"name": "Matriz",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Touch",
+			"name": "Control táctil",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
 		}
 	],
 	"uniqueId": "uo2jpm4xo3v",
@@ -53,13 +69,17 @@
 			"Sprite2",
 			"FondoEnMosaico",
 			"EntradaDeTexto",
-			"creditos",
+			"TITULO1",
 			"comenar",
 			"Mouse",
-			"Texto2",
+			"creditos",
 			"Texto",
 			"Texto3",
-			"VOLVER"
+			"VOLVER",
+			"CARTAS",
+			"ESPACIOS",
+			"array",
+			"ControlTáctil"
 		],
 		"subfolders": []
 	},

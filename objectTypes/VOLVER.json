@@ -3,7 +3,15 @@
 	"plugin-id": "Text",
 	"sid": 961047805596247,
 	"isGlobal": false,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "Pareja",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 679595883696279
+		}
+	],
 	"behaviorTypes": [],
 	"effectTypes": []
 }
