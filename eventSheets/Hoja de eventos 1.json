@@ -1,0 +1,58 @@
+{
+	"name": "Hoja de eventos 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 845795214185335,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "comenar"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 705541120891141,
+					"parameters": {
+						"layout": "Escena 2"
+					}
+				}
+			],
+			"sid": 474260770008257
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 713786376754143,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "creditos"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 169402819430332,
+					"parameters": {
+						"layout": "Escena 3"
+					}
+				}
+			],
+			"sid": 526581911311682
+		}
+	],
+	"sid": 158534436580753
+}

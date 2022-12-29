@@ -1,0 +1,261 @@
+{
+	"name": "Hoja de eventos 2",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "Estado",
+			"type": "string",
+			"initialValue": "Preparar",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 918367339740733
+		},
+		{
+			"eventType": "variable",
+			"name": "Contador",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 403976943479952
+		},
+		{
+			"eventType": "variable",
+			"name": "Control_de_parejas",
+			"type": "number",
+			"initialValue": "-1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 404870794677055
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 499630954870047
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "ESPACIOS",
+					"sid": 633535208958200
+				}
+			],
+			"sid": 800223915172335,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for-each-element",
+							"objectClass": "array",
+							"sid": 675888372829891,
+							"parameters": {
+								"axes": "x"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-at-x",
+							"objectClass": "array",
+							"sid": 282421125822993,
+							"parameters": {
+								"x": "array.CurX",
+								"value": "array.CurX"
+							}
+						}
+					],
+					"sid": 993862914425383
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 768939861707413,
+					"parameters": {
+						"variable": "Estado",
+						"comparison": 0,
+						"value": "\"Preparar\""
+					}
+				}
+			],
+			"actions": [],
+			"sid": 665475468814183,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 963047817542366,
+							"parameters": {
+								"variable": "Contador",
+								"comparison": 2,
+								"value": "7"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 641886493478345,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-comparison",
+									"objectClass": "System",
+									"sid": 378997189551388,
+									"parameters": {
+										"object": "ESPACIOS",
+										"expression": "ESPACIOS.Pareja",
+										"comparison": 0,
+										"value": "-1"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 899095528994525,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "pick-random-instance",
+											"objectClass": "System",
+											"sid": 998609237333268,
+											"parameters": {
+												"object": "ESPACIOS"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "ESPACIOS",
+											"sid": 457643987637419,
+											"parameters": {
+												"instance-variable": "Pareja",
+												"value": "array.At(random(array.Width))"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 737240216462718,
+											"parameters": {
+												"variable": "Control_de_parejas",
+												"value": "ESPACIOS.Pareja"
+											}
+										}
+									],
+									"sid": 346401810366583
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-comparison",
+									"objectClass": "System",
+									"sid": 789783225106312,
+									"parameters": {
+										"object": "ESPACIOS",
+										"expression": "ESPACIOS.Pareja",
+										"comparison": 0,
+										"value": "-1"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 923969248536162,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "pick-random-instance",
+											"objectClass": "System",
+											"sid": 987010663833531,
+											"parameters": {
+												"object": "ESPACIOS"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "ESPACIOS",
+											"sid": 415218530853977,
+											"parameters": {
+												"instance-variable": "Pareja",
+												"value": "Control_de_parejas"
+											}
+										}
+									],
+									"sid": 158570772646200
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "for-each-element",
+									"objectClass": "array",
+									"sid": 174897115760178,
+									"parameters": {
+										"axes": "x"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 146897575497971,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-current-value",
+											"objectClass": "array",
+											"sid": 899815446393816,
+											"parameters": {
+												"comparison": 0,
+												"value": "Control_de_parejas"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "delete",
+											"objectClass": "array",
+											"sid": 112205907904201,
+											"parameters": {
+												"index": "array.CurX",
+												"axis": "x"
+											}
+										}
+									],
+									"sid": 161127536445167
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"sid": 652314144017403
+}
