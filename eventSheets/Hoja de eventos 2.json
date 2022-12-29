@@ -22,6 +22,16 @@
 			"sid": 403976943479952
 		},
 		{
+			"eventType": "variable",
+			"name": "Control_de_parejas",
+			"type": "number",
+			"initialValue": "-1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 404870794677055
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -139,9 +149,106 @@
 												"instance-variable": "Pareja",
 												"value": "array.At(random(array.Width))"
 											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 737240216462718,
+											"parameters": {
+												"variable": "Control_de_parejas",
+												"value": "ESPACIOS.Pareja"
+											}
 										}
 									],
 									"sid": 346401810366583
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-comparison",
+									"objectClass": "System",
+									"sid": 789783225106312,
+									"parameters": {
+										"object": "ESPACIOS",
+										"expression": "ESPACIOS.Pareja",
+										"comparison": 0,
+										"value": "-1"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 923969248536162,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "pick-random-instance",
+											"objectClass": "System",
+											"sid": 987010663833531,
+											"parameters": {
+												"object": "ESPACIOS"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "ESPACIOS",
+											"sid": 415218530853977,
+											"parameters": {
+												"instance-variable": "Pareja",
+												"value": "Control_de_parejas"
+											}
+										}
+									],
+									"sid": 158570772646200
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "for-each-element",
+									"objectClass": "array",
+									"sid": 174897115760178,
+									"parameters": {
+										"axes": "x"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 146897575497971,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-current-value",
+											"objectClass": "array",
+											"sid": 899815446393816,
+											"parameters": {
+												"comparison": 0,
+												"value": "Control_de_parejas"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "delete",
+											"objectClass": "array",
+											"sid": 112205907904201,
+											"parameters": {
+												"index": "array.CurX",
+												"axis": "x"
+											}
+										}
+									],
+									"sid": 161127536445167
 								}
 							]
 						}
