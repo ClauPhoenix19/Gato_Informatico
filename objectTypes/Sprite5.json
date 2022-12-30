@@ -1,7 +1,7 @@
 {
-	"name": "fondoPreguntas",
+	"name": "Sprite5",
 	"plugin-id": "Sprite",
-	"sid": 106722583372929,
+	"sid": 776935127924333,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -18,12 +18,12 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 4696683,
+						"imageSpriteId": 807036,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 306458487091195,
+				"sid": 842762309340538,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

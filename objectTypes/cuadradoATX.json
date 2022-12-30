@@ -1,17 +1,9 @@
 {
-	"name": "ESPACIOS",
+	"name": "cuadradoATX",
 	"plugin-id": "Sprite",
-	"sid": 494033948059411,
+	"sid": 791594860481505,
 	"isGlobal": false,
-	"instanceVariables": [
-		{
-			"name": "Pareja",
-			"type": "number",
-			"desc": "",
-			"show": true,
-			"sid": 135201424007335
-		}
-	],
+	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
@@ -19,31 +11,31 @@
 			{
 				"frames": [
 					{
-						"width": 671,
-						"height": 1029,
+						"width": 1600,
+						"height": 1600,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 9324978,
+						"imageSpriteId": 1450126,
 						"collisionPoly": {
 							"points": [
-								0,
-								0,
+								0.19722222222222222,
+								0.1109375,
 								0.5,
-								0,
-								0.9254843517138599,
-								0.047619047619047616,
-								0.9985096870342772,
+								0.1109375,
+								0.8018518518518518,
+								0.1109375,
+								0.925,
 								0.5,
-								0.9284649776453056,
-								0.9533527696793003,
+								0.7083333333333334,
+								0.8359375,
 								0.5,
-								0.9990281827016521,
-								0.07004470938897168,
-								0.9533527696793003,
-								0,
+								0.8359375,
+								0.29074074074074074,
+								0.8359375,
+								0.08518518518518518,
 								0.5
 							]
 						},
@@ -51,7 +43,7 @@
 						"duration": 1
 					}
 				],
-				"sid": 927955991808198,
+				"sid": 407318953925979,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

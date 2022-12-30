@@ -15,16 +15,7 @@
 					}
 				}
 			],
-			"actions": [
-				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 631372858705559,
-					"parameters": {
-						"layout": "Escena 4"
-					}
-				}
-			],
+			"actions": [],
 			"sid": 474260770008257
 		},
 		{

@@ -1,7 +1,7 @@
 {
-	"name": "fondoPreguntas",
+	"name": "Blank_Space",
 	"plugin-id": "Sprite",
-	"sid": 106722583372929,
+	"sid": 8699328330061077,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,20 +11,20 @@
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
+						"width": 100,
+						"height": 35,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 0.514286,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 4696683,
+						"imageSpriteId": 5958685,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 306458487091195,
-				"name": "Animation 1",
+				"sid": 8945654352971305,
+				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
