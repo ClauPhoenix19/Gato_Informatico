@@ -1,7 +1,7 @@
 {
 	"projectFormatVersion": 1,
 	"savedWithRelease": 31702,
-	"name": "HelpTheCat",
+	"name": "New project",
 	"runtime": "c3",
 	"useWorker": "auto",
 	"bundleAddons": false,
@@ -16,30 +16,6 @@
 		},
 		{
 			"type": "plugin",
-			"id": "TiledBg",
-			"name": "Fondo en mosaico",
-			"author": "Scirra",
-			"version": "r317.2",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
-			"id": "TextBox",
-			"name": "Entrada de texto",
-			"author": "Scirra",
-			"version": "r317.2",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
-			"id": "Text",
-			"name": "Texto",
-			"author": "Scirra",
-			"version": "r317.2",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
 			"id": "Mouse",
 			"name": "Mouse",
 			"author": "Scirra",
@@ -47,39 +23,25 @@
 			"bundled": false
 		},
 		{
-			"type": "plugin",
-			"id": "Arr",
-			"name": "Matriz",
-			"author": "Scirra",
-			"version": "r317.2",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
-			"id": "Touch",
-			"name": "Control táctil",
+			"type": "behavior",
+			"id": "DragnDrop",
+			"name": "Arrastrar y soltar",
 			"author": "Scirra",
 			"version": "r317.2",
 			"bundled": false
 		}
 	],
-	"uniqueId": "uo2jpm4xo3v",
+	"uniqueId": "2bq8ld2xx7q92",
 	"objectTypes": {
 		"items": [
-			"Sprite2",
-			"FondoEnMosaico",
-			"EntradaDeTexto",
-			"TITULO1",
-			"comenar",
+			"Background",
+			"Blank_Space",
+			"Sprite_Variable",
+			"Sprite_Logical",
+			"Sprite_Information",
 			"Mouse",
-			"creditos",
-			"Texto",
-			"Texto3",
-			"VOLVER",
-			"CARTAS",
-			"ESPACIOS",
-			"array",
-			"ControlTáctil"
+			"fondoPreguntas",
+			"Sprite5"
 		],
 		"subfolders": []
 	},
@@ -91,23 +53,13 @@
 	},
 	"layouts": {
 		"items": [
-			"Escena 1",
-			"Escena 2",
-			"Escena 3",
-			"Escena 4",
-			"Escena 5",
-			"Escena 6",
-			"Escena 7"
+			"Layout 1"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
-			"Hoja de eventos 1",
-			"Hoja de eventos 2",
-			"Hoja de eventos 3",
-			"Hoja de eventos 4",
-			"Hoja de eventos 5"
+			"Event sheet 1"
 		],
 		"subfolders": []
 	},
@@ -135,59 +87,51 @@
 		"icon": {
 			"items": [
 				{
-					"name": "logo-carga.png",
+					"name": "icon-16.png",
 					"type": "image/png",
-					"sid": 279295187972606,
+					"sid": 730571742467435,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-32.png",
+					"type": "image/png",
+					"sid": 211635193461016,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-114.png",
+					"type": "image/png",
+					"sid": 161343340267171,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-128.png",
+					"type": "image/png",
+					"sid": 468284002621444,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-256.png",
+					"type": "image/png",
+					"sid": 806955666313947,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "loading-logo.png",
+					"type": "image/png",
+					"sid": 346642658702243,
 					"icon-info": {
 						"purpose": "loading-logo"
-					}
-				},
-				{
-					"name": "icono-16.png",
-					"type": "image/png",
-					"sid": 756071896216386,
-					"icon-info": {
-						"purpose": "app-icon"
-					}
-				},
-				{
-					"name": "icono-128.png",
-					"type": "image/png",
-					"sid": 224683781232545,
-					"icon-info": {
-						"purpose": "app-icon"
-					}
-				},
-				{
-					"name": "icono-256.png",
-					"type": "image/png",
-					"sid": 457820938462759,
-					"icon-info": {
-						"purpose": "app-icon"
-					}
-				},
-				{
-					"name": "icono-32.png",
-					"type": "image/png",
-					"sid": 884997799612424,
-					"icon-info": {
-						"purpose": "app-icon"
-					}
-				},
-				{
-					"name": "icono-64.png",
-					"type": "image/png",
-					"sid": 373819394300941,
-					"icon-info": {
-						"purpose": "app-icon"
-					}
-				},
-				{
-					"name": "icono-512.png",
-					"type": "image/png",
-					"sid": 755610386822998,
-					"icon-info": {
-						"purpose": "app-icon"
 					}
 				}
 			],
@@ -199,9 +143,7 @@
 		}
 	},
 	"timelines": {
-		"items": [
-			"Línea de tiempo 1"
-		],
+		"items": [],
 		"subfolders": [
 			{
 				"items": [],
@@ -214,8 +156,8 @@
 		"version": "1.0.0.0",
 		"author": "",
 		"authorEmail": "",
-		"authorWebsite": "",
-		"appId": "",
+		"authorWebsite": "http://",
+		"appId": "com.mycompany.myapp",
 		"pixelRounding": false,
 		"zAxisScale": "normalized",
 		"fov": 0.7853981633974483,
@@ -224,15 +166,15 @@
 		"fullscreenQuality": "high",
 		"viewportFit": "auto",
 		"backgroundColor": [
-			0.4392156862745098,
-			0.2980392156862745,
-			0.403921568627451,
+			0,
+			0,
+			0,
 			0
 		],
 		"splashColor": [
-			0.5019607843137255,
-			0.30196078431372547,
-			0.41568627450980394,
+			1,
+			1,
+			1,
 			0
 		],
 		"useThemeColor": false,
@@ -242,7 +184,7 @@
 			1,
 			0
 		],
-		"orientations": "landscape",
+		"orientations": "any",
 		"webgpu": "auto",
 		"gpuPreference": "high-performance",
 		"scriptsType": "module",
@@ -253,14 +195,14 @@
 		"renderingMode": "auto",
 		"anisotropicFiltering": "auto",
 		"maxSpriteSheetSize": 2048,
-		"loaderStyle": "splash",
+		"loaderStyle": "progress-logo",
 		"preloadSounds": true,
 		"cordovaiOSScheme": "app",
 		"cordovaAndroidScheme": "https",
 		"autoReloadScriptsOnPreview": false,
 		"exportFileStructure": "folders"
 	},
-	"viewportWidth": 900,
+	"viewportWidth": 854,
 	"viewportHeight": 480,
 	"firstLayout": null
 }

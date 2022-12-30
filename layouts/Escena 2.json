@@ -7,26 +7,93 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "FondoEnMosaico",
+					"type": "fondoPreguntas",
 					"properties": {
 						"initially-visible": true,
-						"origin": "top-left",
-						"wrap-horizontal": "repeat",
-						"wrap-vertical": "repeat",
-						"image-offset-x": 0,
-						"image-offset-y": 0,
-						"image-scale-x": 1,
-						"image-scale-y": 1,
-						"image-angle": 0
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
 					},
-					"uid": 12,
+					"uid": 24,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": -56,
-						"y": -80,
-						"width": 2422,
-						"height": 1080,
+						"x": 424,
+						"y": 223,
+						"width": 944,
+						"height": 535,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite5",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 33,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 353,
+						"y": 479,
+						"width": 1233,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "TITULOJUEGO",
+					"properties": {
+						"text": "COLOCA EL COMPONENTE EN SU SIGNIFICADO CORRECTO",
+						"enable-bbcode": true,
+						"font": "Bernard MT",
+						"size": 28,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							0.8235294117647058,
+							0.1803921568627451,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 20,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 28,
+						"y": 22,
+						"width": 832,
+						"height": 56,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -40,27 +107,37 @@
 					}
 				},
 				{
-					"type": "CARTAS",
+					"type": "SignificadoCPU",
 					"properties": {
+						"text": "Es el \"cerebro\" del ordenador, el encargado de controlar y coordinar a todos los dispositivos conectados al ordenador",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 10,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0.2,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "top",
+						"wrapping": "word",
 						"initially-visible": true,
-						"initial-animation": "back",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
+						"origin": "top-left"
 					},
-					"uid": 18,
-					"instanceVariables": {
-						"Pareja": 0,
-						"Acertada": false
-					},
+					"uid": 12,
+					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1161,
-						"y": 200,
-						"width": 71.43985209674028,
-						"height": 109.55530224671497,
-						"originX": 0.5,
-						"originY": 0.5,
+						"x": 19,
+						"y": 94,
+						"width": 197,
+						"height": 72,
+						"originX": 0,
+						"originY": 0,
 						"color": [
 							1,
 							1,
@@ -72,57 +149,37 @@
 					}
 				},
 				{
-					"type": "ESPACIOS",
+					"type": "Significadotarjetagrafica",
 					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 13,
-					"instanceVariables": {
-						"Pareja": -1
-					},
-					"behaviors": {},
-					"world": {
-						"x": 196,
-						"y": 128,
-						"width": 70.96743523189767,
-						"height": 108.83083584742582,
-						"originX": 0.5,
-						"originY": 0.5,
+						"text": "Se encarga de procesar los datos provenientes de la CPU para después mostrarlo al usuario visualmente. Su componente fundamental es la GPU, dedicado al procesamiento de gráficos",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 9,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
 						"color": [
-							1,
-							1,
-							1,
+							0.2,
+							0,
+							0,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "ESPACIOS",
-					"properties": {
+						"horizontal-alignment": "center",
+						"vertical-alignment": "top",
+						"wrapping": "word",
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
+						"origin": "top-left"
 					},
 					"uid": 14,
-					"instanceVariables": {
-						"Pareja": -1
-					},
+					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 448,
-						"y": 126,
-						"width": 70.96743523189767,
-						"height": 108.83083584742582,
-						"originX": 0.5,
-						"originY": 0.5,
+						"x": 72,
+						"y": 217,
+						"width": 216,
+						"height": 92,
+						"originX": 0,
+						"originY": 0,
 						"color": [
 							1,
 							1,
@@ -134,26 +191,79 @@
 					}
 				},
 				{
-					"type": "ESPACIOS",
+					"type": "SignificadoPlacaBase",
 					"properties": {
+						"text": "Otorga soporte a los demás componentes y los conecta. Para que pueda funcionar necesita de un software llamado BIOS",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 10,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0.2,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "top",
+						"wrapping": "word",
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
+						"origin": "top-left"
+					},
+					"uid": 13,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 360,
+						"y": 216,
+						"width": 156,
+						"height": 98,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "SigbificadoATX",
+					"properties": {
+						"text": "Sirve para montar físicamente los componentes de un ordenador, protege estos elementos y mantiene su temperatura baja",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 10,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0.2,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
 					},
 					"uid": 15,
-					"instanceVariables": {
-						"Pareja": -1
-					},
+					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 585,
-						"y": 125,
-						"width": 70.96743523189767,
-						"height": 108.83083584742582,
-						"originX": 0.5,
-						"originY": 0.5,
+						"x": 247,
+						"y": 91,
+						"width": 205,
+						"height": 86,
+						"originX": 0,
+						"originY": 0,
 						"color": [
 							1,
 							1,
@@ -165,88 +275,37 @@
 					}
 				},
 				{
-					"type": "ESPACIOS",
+					"type": "SignificadoDisipadoraCPU",
 					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 16,
-					"instanceVariables": {
-						"Pareja": -1
-					},
-					"behaviors": {},
-					"world": {
-						"x": 851,
-						"y": 122,
-						"width": 70.96743523189767,
-						"height": 108.83083584742582,
-						"originX": 0.5,
-						"originY": 0.5,
+						"text": "Se encarga de evitar que la CPU se sobrecaliente. Cada caja debe tener un disipador acorde",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 10,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
 						"color": [
-							1,
-							1,
-							1,
+							0.2,
+							0,
+							0,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "ESPACIOS",
-					"properties": {
+						"horizontal-alignment": "center",
+						"vertical-alignment": "top",
+						"wrapping": "word",
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 17,
-					"instanceVariables": {
-						"Pareja": -1
-					},
-					"behaviors": {},
-					"world": {
-						"x": 720,
-						"y": 122,
-						"width": 70.96743523189767,
-						"height": 108.83083584742582,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "ESPACIOS",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
+						"origin": "top-left"
 					},
 					"uid": 19,
-					"instanceVariables": {
-						"Pareja": -1
-					},
+					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 326,
-						"y": 126,
-						"width": 70.96743523189767,
-						"height": 108.83083584742582,
-						"originX": 0.5,
-						"originY": 0.5,
+						"x": 489,
+						"y": 97,
+						"width": 173,
+						"height": 71,
+						"originX": 0,
+						"originY": 0,
 						"color": [
 							1,
 							1,
@@ -258,26 +317,37 @@
 					}
 				},
 				{
-					"type": "ESPACIOS",
+					"type": "significadoRAM",
 					"properties": {
+						"text": "Es la memoria principal de un dispositivo, donde se almacena de forma volátil los datos de los programas que se están utilizando en ese momento",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 10,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0.2,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "top",
+						"wrapping": "word",
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
+						"origin": "top-left"
 					},
-					"uid": 20,
-					"instanceVariables": {
-						"Pareja": -1
-					},
+					"uid": 17,
+					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 67,
-						"y": 126,
-						"width": 70.96743523189767,
-						"height": 108.83083584742582,
-						"originX": 0.5,
-						"originY": 0.5,
+						"x": 602.7272727272727,
+						"y": 215,
+						"width": 187,
+						"height": 88,
+						"originX": 0,
+						"originY": 0,
 						"color": [
 							1,
 							1,
@@ -289,212 +359,37 @@
 					}
 				},
 				{
-					"type": "ESPACIOS",
+					"type": "SignificadoPSU",
 					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 21,
-					"instanceVariables": {
-						"Pareja": -1
-					},
-					"behaviors": {},
-					"world": {
-						"x": 73,
-						"y": 329,
-						"width": 70.96743523189767,
-						"height": 108.83083584742582,
-						"originX": 0.5,
-						"originY": 0.5,
+						"text": "Es el componente esencial del ordenador, ya que es el que da la vida a cualquier dispositivo electrónico, transformando la corriente eléctrica alterna en continua",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 9,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
 						"color": [
-							1,
-							1,
-							1,
+							0.2,
+							0,
+							0,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "ESPACIOS",
-					"properties": {
+						"horizontal-alignment": "center",
+						"vertical-alignment": "top",
+						"wrapping": "word",
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
+						"origin": "top-left"
 					},
-					"uid": 22,
-					"instanceVariables": {
-						"Pareja": -1
-					},
+					"uid": 16,
+					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 334,
-						"y": 323,
-						"width": 70.96743523189767,
-						"height": 108.83083584742582,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "ESPACIOS",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 23,
-					"instanceVariables": {
-						"Pareja": -1
-					},
-					"behaviors": {},
-					"world": {
-						"x": 206,
-						"y": 327,
-						"width": 70.96743523189767,
-						"height": 108.83083584742582,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "ESPACIOS",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 24,
-					"instanceVariables": {
-						"Pareja": -1
-					},
-					"behaviors": {},
-					"world": {
-						"x": 460,
-						"y": 324,
-						"width": 70.96743523189767,
-						"height": 108.83083584742582,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "ESPACIOS",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 25,
-					"instanceVariables": {
-						"Pareja": -1
-					},
-					"behaviors": {},
-					"world": {
-						"x": 598,
-						"y": 326,
-						"width": 70.96743523189767,
-						"height": 108.83083584742582,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "ESPACIOS",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 26,
-					"instanceVariables": {
-						"Pareja": -1
-					},
-					"behaviors": {},
-					"world": {
-						"x": 731,
-						"y": 322,
-						"width": 70.96743523189767,
-						"height": 108.83083584742582,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "ESPACIOS",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 27,
-					"instanceVariables": {
-						"Pareja": -1
-					},
-					"behaviors": {},
-					"world": {
-						"x": 851,
-						"y": 324,
-						"width": 70.96743523189767,
-						"height": 108.83083584742582,
-						"originX": 0.5,
-						"originY": 0.5,
+						"x": 694,
+						"y": 94,
+						"width": 180,
+						"height": 105,
+						"originX": 0,
+						"originY": 0,
 						"color": [
 							1,
 							1,
@@ -506,7 +401,7 @@
 					}
 				}
 			],
-			"sid": 952599406055943,
+			"sid": 105705978796954,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
@@ -533,9 +428,359 @@
 			"blendMode": "normal",
 			"zElevation": 0,
 			"global": false
+		},
+		{
+			"name": "Capa 1",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "cuadradoATX",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 23,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 342.8411684858187,
+						"y": 128.04820710766333,
+						"width": 119.72015039449798,
+						"height": 115.4303577468946,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "RAM",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 31,
+					"instanceVariables": {},
+					"behaviors": {
+						"ArrastrarYSoltar": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						},
+						"Pegado": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
+					"world": {
+						"x": 79,
+						"y": 417,
+						"width": 123.15580843041312,
+						"height": 23.5614967722047,
+						"originX": 0.49600798403193613,
+						"originY": 0.44482758620689655,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "DisipadorCPU",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 28,
+					"instanceVariables": {},
+					"behaviors": {
+						"ArrastrarYSoltar": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						},
+						"Pegado": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
+					"world": {
+						"x": 207,
+						"y": 420,
+						"width": 74.0169152978958,
+						"height": 79.68756606668622,
+						"originX": 0.5060483870967742,
+						"originY": 0.5009363295880149,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "TarjetaGrafica",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 27,
+					"instanceVariables": {},
+					"behaviors": {
+						"ArrastrarYSoltar": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						},
+						"Pegado": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
+					"world": {
+						"x": 325,
+						"y": 421,
+						"width": 91.04977413180667,
+						"height": 25.232094269206545,
+						"originX": 0.503921568627451,
+						"originY": 0.45047169811320753,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CPU",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 26,
+					"instanceVariables": {},
+					"behaviors": {
+						"ArrastrarYSoltar": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						},
+						"Pegado": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
+					"world": {
+						"x": 448,
+						"y": 417,
+						"width": 59.31020571179616,
+						"height": 71.17224685415536,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Placabase",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 30,
+					"instanceVariables": {},
+					"behaviors": {
+						"ArrastrarYSoltar": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						},
+						"Pegado": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
+					"world": {
+						"x": 554,
+						"y": 417,
+						"width": 57.82806696644191,
+						"height": 72.74212749855256,
+						"originX": 0.5166389351081531,
+						"originY": 0.5013227513227513,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "ATXCaja",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 25,
+					"instanceVariables": {},
+					"behaviors": {
+						"ArrastrarYSoltar": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						},
+						"Pegado": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
+					"world": {
+						"x": 672,
+						"y": 417,
+						"width": 67.35571478768378,
+						"height": 67.71272387666441,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "PSU",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 32,
+					"instanceVariables": {},
+					"behaviors": {
+						"ArrastrarYSoltar": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						},
+						"Pegado": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
+					"world": {
+						"x": 817,
+						"y": 422,
+						"width": 120.26008382116274,
+						"height": 64.46473994110386,
+						"originX": 0.4898336414048059,
+						"originY": 0.5948275862068966,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 119526267407542,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
 		}
 	],
-	"sid": 541548629220595,
+	"sid": 705095961937995,
 	"nonworld-instances": [],
 	"effectTypes": [],
 	"width": 1800,

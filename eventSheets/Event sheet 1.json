@@ -1,0 +1,126 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "Sprite_Logical",
+					"sid": 3571345080151661,
+					"behaviorType": "DragDrop"
+				}
+			],
+			"actions": [],
+			"sid": 6664576568389073,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 240662104300877,
+							"parameters": {
+								"object": "Blank_Space"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "Sprite_Logical",
+							"sid": 3392689202733892,
+							"parameters": {
+								"x": "Blank_Space.X",
+								"y": "Blank_Space.Y"
+							}
+						}
+					],
+					"sid": 8983242553597853
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "Sprite_Variable",
+					"sid": 915470127276595,
+					"behaviorType": "DragDrop"
+				}
+			],
+			"actions": [],
+			"sid": 1353964380128038,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 753601813407152,
+							"parameters": {
+								"object": "Blank_Space"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "Sprite_Variable",
+							"sid": 1887006106078057,
+							"parameters": {
+								"x": "Blank_Space.X",
+								"y": "Blank_Space.Y"
+							}
+						}
+					],
+					"sid": 2188191105791188
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "Sprite_Information",
+					"sid": 6688809967424105,
+					"behaviorType": "DragDrop"
+				}
+			],
+			"actions": [],
+			"sid": 290319700332612,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 8891326447363145,
+							"parameters": {
+								"object": "Blank_Space"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "Sprite_Information",
+							"sid": 6296926330493729,
+							"parameters": {
+								"x": "Blank_Space.X",
+								"y": "Blank_Space.Y"
+							}
+						}
+					],
+					"sid": 8998998075982898
+				}
+			]
+		}
+	],
+	"sid": 991097546714712
+}
