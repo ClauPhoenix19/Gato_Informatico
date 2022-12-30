@@ -7,70 +7,37 @@
 				{
 					"id": "on-drop",
 					"objectClass": "ATXCaja",
-					"sid": 968564146540053,
+					"sid": 239017979118147,
 					"behaviorType": "ArrastrarYSoltar"
 				}
 			],
 			"actions": [],
-			"sid": 950968225726035,
+			"sid": 195790585166347,
 			"children": [
 				{
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "is-overlapping-at-offset",
-							"objectClass": "ATXCaja",
-							"sid": 252313403067908,
+							"id": "cursor-is-over-object",
+							"objectClass": "Raton",
+							"sid": 265736231986054,
 							"parameters": {
-								"object": "cuadradoATX",
-								"offset-x": "342.841168",
-								"offset-y": "128.048207"
+								"object": "cuadradoATX"
 							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-enabled",
-							"objectClass": "ATXCaja",
-							"sid": 817311932240801,
-							"behaviorType": "ArrastrarYSoltar",
-							"parameters": {
-								"state": "disabled"
-							}
-						},
-						{
-							"id": "set-position",
-							"objectClass": "ATXCaja",
-							"sid": 995890010174959,
-							"parameters": {
-								"x": "342.841168",
-								"y": "128.048207"
-							}
-						}
-					],
-					"sid": 227289895473994
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "else",
-							"objectClass": "System",
-							"sid": 554123728271794
 						}
 					],
 					"actions": [
 						{
 							"id": "set-position",
 							"objectClass": "ATXCaja",
-							"sid": 816226888338679,
+							"sid": 664627216571050,
 							"parameters": {
-								"x": "669",
-								"y": "416"
+								"x": "cuadradoATX.X",
+								"y": "cuadradoATX.Y"
 							}
 						}
 					],
-					"sid": 323984849969628
+					"sid": 387211626311516
 				}
 			]
 		},
@@ -78,32 +45,241 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "ATXCaja",
-					"sid": 692397894468854,
-					"parameters": {
-						"object": "cuadradoATX"
-					}
+					"id": "on-drop",
+					"objectClass": "CPU",
+					"sid": 802212078302241,
+					"behaviorType": "ArrastrarYSoltar"
 				}
 			],
-			"actions": [
+			"actions": [],
+			"sid": 949462705185098,
+			"children": [
 				{
-					"id": "pin-to-object-properties",
-					"objectClass": "ATXCaja",
-					"sid": 798013021805255,
-					"behaviorType": "Pegado",
-					"parameters": {
-						"pin-to": "cuadradoATX",
-						"x": true,
-						"y": true,
-						"angle": true,
-						"width-type": "no",
-						"height-type": "no",
-						"z": false
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Raton",
+							"sid": 947066610271462,
+							"parameters": {
+								"object": "cuadradoCPU"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "CPU",
+							"sid": 892205120005856,
+							"parameters": {
+								"x": "cuadradoCPU.X",
+								"y": "cuadradoCPU.Y"
+							}
+						}
+					],
+					"sid": 961950193272388
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "DisipadorCPU",
+					"sid": 715481943057793,
+					"behaviorType": "ArrastrarYSoltar"
 				}
 			],
-			"sid": 939637485494769
+			"actions": [],
+			"sid": 421060444837519,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Raton",
+							"sid": 520613422822408,
+							"parameters": {
+								"object": "cuadradodisipadorCPU"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "DisipadorCPU",
+							"sid": 330919908803711,
+							"parameters": {
+								"x": "cuadradodisipadorCPU.X",
+								"y": "cuadradodisipadorCPU.Y"
+							}
+						}
+					],
+					"sid": 327064590953056
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "Placabase",
+					"sid": 408990437416148,
+					"behaviorType": "ArrastrarYSoltar"
+				}
+			],
+			"actions": [],
+			"sid": 851626202677512,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Raton",
+							"sid": 867703818010408,
+							"parameters": {
+								"object": "cuadradoplacabase"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "Placabase",
+							"sid": 683374303068977,
+							"parameters": {
+								"x": "cuadradoplacabase.X",
+								"y": "cuadradoplacabase.Y"
+							}
+						}
+					],
+					"sid": 138403782039655
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "TarjetaGrafica",
+					"sid": 773935755743366,
+					"behaviorType": "ArrastrarYSoltar"
+				}
+			],
+			"actions": [],
+			"sid": 317037829803240,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Raton",
+							"sid": 466919896038211,
+							"parameters": {
+								"object": "cuadradoTarjetagrafica"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "TarjetaGrafica",
+							"sid": 600178509265486,
+							"parameters": {
+								"x": "cuadradoTarjetagrafica.X",
+								"y": "cuadradoTarjetagrafica.Y"
+							}
+						}
+					],
+					"sid": 360788716334824
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "RAM",
+					"sid": 205727506138317,
+					"behaviorType": "ArrastrarYSoltar"
+				}
+			],
+			"actions": [],
+			"sid": 801954735248892,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Raton",
+							"sid": 512476374853201,
+							"parameters": {
+								"object": "CuadradoRAM"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "RAM",
+							"sid": 213447851945242,
+							"parameters": {
+								"x": "CuadradoRAM.X",
+								"y": "CuadradoRAM.Y"
+							}
+						}
+					],
+					"sid": 171418509265059
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "PSU",
+					"sid": 765178505046928,
+					"behaviorType": "ArrastrarYSoltar"
+				}
+			],
+			"actions": [],
+			"sid": 903198868382352,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Raton",
+							"sid": 481206395174892,
+							"parameters": {
+								"object": "CuadradoPSU"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "PSU",
+							"sid": 780238228030723,
+							"parameters": {
+								"x": "CuadradoPSU.X",
+								"y": "CuadradoPSU.Y"
+							}
+						}
+					],
+					"sid": 150835784827051
+				}
+			]
 		}
 	],
 	"sid": 530082264353703

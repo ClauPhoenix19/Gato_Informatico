@@ -38,7 +38,7 @@
 				{
 					"type": "TITULO1",
 					"properties": {
-						"text": "Michi quiere entrar al mundo de la Informática, pero no sabe por donde empezar y tiene muchas preguntas al respecto",
+						"text": "Michi quiere aprender sobre los componentes de un PC, pero no tiene ni idea, enséñale sobre los diferentes componentes",
 						"enable-bbcode": true,
 						"font": "Britannic",
 						"size": 25,
@@ -103,8 +103,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 358,
-						"y": 321,
+						"x": 371,
+						"y": 324,
 						"width": 145,
 						"height": 41,
 						"originX": 0,
@@ -145,8 +145,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 362,
-						"y": 369,
+						"x": 384,
+						"y": 368,
 						"width": 246,
 						"height": 63.09090909090912,
 						"originX": 0,

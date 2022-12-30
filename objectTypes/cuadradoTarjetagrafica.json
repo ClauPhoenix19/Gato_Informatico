@@ -1,7 +1,7 @@
 {
-	"name": "fondoPreguntas",
+	"name": "cuadradoTarjetagrafica",
 	"plugin-id": "Sprite",
-	"sid": 335075219973325,
+	"sid": 206825417022498,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -18,12 +18,12 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 4548412,
+						"imageSpriteId": 1370444,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 119727614896684,
+				"sid": 118200690095354,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

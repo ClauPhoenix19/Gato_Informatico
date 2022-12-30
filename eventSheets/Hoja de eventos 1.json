@@ -6,7 +6,7 @@
 			"conditions": [
 				{
 					"id": "on-object-clicked",
-					"objectClass": "Mouse",
+					"objectClass": "Raton",
 					"sid": 845795214185335,
 					"parameters": {
 						"mouse-button": "left",
@@ -15,7 +15,16 @@
 					}
 				}
 			],
-			"actions": [],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 900522409499146,
+					"parameters": {
+						"layout": "Escena 2"
+					}
+				}
+			],
 			"sid": 474260770008257
 		},
 		{
@@ -23,7 +32,7 @@
 			"conditions": [
 				{
 					"id": "on-object-clicked",
-					"objectClass": "Mouse",
+					"objectClass": "Raton",
 					"sid": 713786376754143,
 					"parameters": {
 						"mouse-button": "left",

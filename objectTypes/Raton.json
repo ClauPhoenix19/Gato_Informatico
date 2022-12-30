@@ -1,0 +1,10 @@
+{
+	"name": "Raton",
+	"plugin-id": "Mouse",
+	"sid": 560211339705657,
+	"singleglobal-inst": {
+		"type": "Raton",
+		"properties": {},
+		"uid": 6
+	}
+}

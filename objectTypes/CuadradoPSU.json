@@ -1,7 +1,7 @@
 {
-	"name": "fondoPreguntas",
+	"name": "CuadradoPSU",
 	"plugin-id": "Sprite",
-	"sid": 335075219973325,
+	"sid": 559861854177843,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -18,12 +18,12 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 4548412,
+						"imageSpriteId": 6471175,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 119727614896684,
+				"sid": 347738357569181,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
