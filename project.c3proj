@@ -8,16 +8,8 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
-			"id": "Sprite",
-			"name": "Sprite",
-			"author": "Scirra",
-			"version": "r317.2",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
 			"id": "TiledBg",
-			"name": "Fondo en mosaico",
+			"name": "Tiled Background",
 			"author": "Scirra",
 			"version": "r317.2",
 			"bundled": false
@@ -25,7 +17,7 @@
 		{
 			"type": "plugin",
 			"id": "TextBox",
-			"name": "Entrada de texto",
+			"name": "Text input",
 			"author": "Scirra",
 			"version": "r317.2",
 			"bundled": false
@@ -33,7 +25,7 @@
 		{
 			"type": "plugin",
 			"id": "Text",
-			"name": "Texto",
+			"name": "Text",
 			"author": "Scirra",
 			"version": "r317.2",
 			"bundled": false
@@ -48,8 +40,16 @@
 		},
 		{
 			"type": "plugin",
-			"id": "Arr",
-			"name": "Matriz",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Button",
+			"name": "Button",
 			"author": "Scirra",
 			"version": "r317.2",
 			"bundled": false
@@ -57,7 +57,15 @@
 		{
 			"type": "plugin",
 			"id": "Touch",
-			"name": "Control táctil",
+			"name": "Touch",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Arr",
+			"name": "Array",
 			"author": "Scirra",
 			"version": "r317.2",
 			"bundled": false
@@ -66,7 +74,6 @@
 	"uniqueId": "uo2jpm4xo3v",
 	"objectTypes": {
 		"items": [
-			"Sprite2",
 			"FondoEnMosaico",
 			"EntradaDeTexto",
 			"TITULO1",
@@ -76,10 +83,22 @@
 			"Texto",
 			"Texto3",
 			"VOLVER",
-			"CARTAS",
 			"ESPACIOS",
-			"array",
-			"ControlTáctil"
+			"YoTeAyudare",
+			"Texto4",
+			"fondoPreguntas",
+			"Botón",
+			"Sprite3",
+			"Sprite4",
+			"Sprite2",
+			"Sprite",
+			"Question",
+			"Answer1",
+			"Answer2",
+			"Answer3",
+			"Answer4",
+			"ControlTáctil",
+			"Trivial"
 		],
 		"subfolders": []
 	},
@@ -93,7 +112,7 @@
 		"items": [
 			"Escena 1",
 			"Escena 3",
-			"Escena 2"
+			"Escena 4"
 		],
 		"subfolders": []
 	},
@@ -101,7 +120,7 @@
 		"items": [
 			"Hoja de eventos 1",
 			"Hoja de eventos 3",
-			"Hoja de eventos 2"
+			"Hoja de eventos 4"
 		],
 		"subfolders": []
 	},

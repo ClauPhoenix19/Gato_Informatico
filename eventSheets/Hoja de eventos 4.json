@@ -1,0 +1,207 @@
+{
+	"name": "Hoja de eventos 4",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "QuixTrivial",
+			"type": "string",
+			"initialValue": "{\"c2array\":true,\"size\":[10,6,1],\"data\":[     [[\"Question 1\"],[\"Answer1\"],[\"Answer2\"],[\"Answer3\"],[\"Answer4\"],[\"Answer3\"]],     [[\"Question 2\"],[\"Answer1\"],[\"Answer2\"],[\"Answer3\"],[\"Answer4\"],[\"Answer4\"]],     [[\"Question 3\"],[\"Answer1\"],[\"Answer2\"],[\"Answer3\"],[\"Answer4\"],[\"Answer1\"]],     [[\"Question 4\"],[\"Answer1\"],[\"Answer2\"],[\"Answer3\"],[\"Answer4\"],[\"Answer2\"]],     [[\"Question 5\"],[\"Answer1\"],[\"Answer2\"],[\"Answer3\"],[\"Answer4\"],[\"Answer4\"]],     [[\"Question 6\"],[\"Answer1\"],[\"Answer2\"],[\"Answer3\"],[\"Answer4\"],[\"Answer3\"]],     [[\"Question 7\"],[\"Answer1\"],[\"Answer2\"],[\"Answer3\"],[\"Answer4\"],[\"Answer2\"]],     [[\"Question 8\"],[\"Answer1\"],[\"Answer2\"],[\"Answer3\"],[\"Answer4\"],[\"Answer1\"]],     [[\"Question 9\"],[\"Answer1\"],[\"Answer2\"],[\"Answer3\"],[\"Answer4\"],[\"Answer2\"]],     [[\"Question 10\"],[\"Answer1\"],[\"Answer2\"],[\"Answer3\"],[\"Answer4\"],[\"Answer1\"]] ]}",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 292914277575407
+		},
+		{
+			"eventType": "variable",
+			"name": "NumPregunta",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 515384967399471
+		},
+		{
+			"eventType": "variable",
+			"name": "Record",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 592940575225354
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 383390059018014
+				}
+			],
+			"actions": [
+				{
+					"id": "load",
+					"objectClass": "Trivial",
+					"sid": 554058665784192,
+					"parameters": {
+						"json": "QuixTrivial"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Question",
+					"sid": 766132157747065,
+					"parameters": {
+						"text": "Trivial.At(0,0)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Answer1",
+					"sid": 842359115675082,
+					"parameters": {
+						"text": "Trivial.At(0,1)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Answer2",
+					"sid": 143178967299629,
+					"parameters": {
+						"text": "Trivial.At(0,2)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Answer3",
+					"sid": 999447367812852,
+					"parameters": {
+						"text": "Trivial.At(0,3)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Answer4",
+					"sid": 628160166136641,
+					"parameters": {
+						"text": "Trivial.At(0,4)"
+					}
+				}
+			],
+			"sid": 288256390892617
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "ControlTáctil",
+					"sid": 136141750989119,
+					"parameters": {
+						"object": "Answer1"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 277514502886929
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "ControlTáctil",
+					"sid": 843915060440264,
+					"parameters": {
+						"object": "Answer2"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 905277868340227
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "ControlTáctil",
+					"sid": 569310147132994,
+					"parameters": {
+						"object": "Answer3"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 778862930399735
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "ControlTáctil",
+					"sid": 702953177642783,
+					"parameters": {
+						"object": "Answer4"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 944120141252445
+		},
+		{
+			"functionName": "RevisarRespuesta",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "Respuesta",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"sid": 250612355698148
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 731611565485944,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 117413692056572,
+							"parameters": {
+								"first-value": "Respuesta",
+								"comparison": 0,
+								"second-value": "Trivial.At(0,5)"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 621018628081575,
+							"parameters": {
+								"variable": "Record",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 646283627716946
+				}
+			]
+		}
+	],
+	"sid": 774794410988221
+}
