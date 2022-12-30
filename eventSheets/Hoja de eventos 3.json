@@ -6,7 +6,7 @@
 			"conditions": [
 				{
 					"id": "on-object-clicked",
-					"objectClass": "Mouse",
+					"objectClass": "Raton",
 					"sid": 494971514402912,
 					"parameters": {
 						"mouse-button": "left",

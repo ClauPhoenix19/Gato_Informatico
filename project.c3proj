@@ -1,15 +1,31 @@
 {
 	"projectFormatVersion": 1,
 	"savedWithRelease": 31702,
-	"name": "New project",
+	"name": "HelpTheCat",
 	"runtime": "c3",
 	"useWorker": "auto",
 	"bundleAddons": false,
 	"usedAddons": [
 		{
 			"type": "plugin",
-			"id": "Sprite",
-			"name": "Sprite",
+			"id": "TiledBg",
+			"name": "Fondo en mosaico",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "TextBox",
+			"name": "Entrada de texto",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Texto",
 			"author": "Scirra",
 			"version": "r317.2",
 			"bundled": false
@@ -23,25 +39,85 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Touch",
+			"name": "Control táctil",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "DragnDrop",
 			"name": "Arrastrar y soltar",
 			"author": "Scirra",
 			"version": "r317.2",
 			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Pin",
+			"name": "Pegado",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
 		}
 	],
-	"uniqueId": "2bq8ld2xx7q92",
+	"uniqueId": "uo2jpm4xo3v",
 	"objectTypes": {
 		"items": [
-			"Background",
-			"Blank_Space",
-			"Sprite_Variable",
-			"Sprite_Logical",
-			"Sprite_Information",
-			"Mouse",
+			"FondoEnMosaico",
+			"EntradaDeTexto",
+			"TITULO1",
+			"comenar",
+			"Raton",
+			"creditos",
+			"Texto",
+			"Texto3",
+			"VOLVER",
+			"YoTeAyudare",
+			"Texto4",
 			"fondoPreguntas",
-			"Sprite5"
+			"Sprite3",
+			"Sprite4",
+			"Sprite2",
+			"Sprite",
+			"Text",
+			"Text2",
+			"ATXCaja",
+			"CPU",
+			"TarjetaGrafica",
+			"DisipadorCPU",
+			"Placabase",
+			"RAM",
+			"PSU",
+			"Sprite5",
+			"SignificadoCPU",
+			"SignificadoPlacaBase",
+			"Significadotarjetagrafica",
+			"SigbificadoATX",
+			"SignificadoPSU",
+			"significadoRAM",
+			"SignificadoDisipadoraCPU",
+			"TITULOJUEGO",
+			"ControlTáctil",
+			"Sprite6",
+			"cuadradoATX",
+			"ImagenTarjetaGrafica",
+			"CuadradoRAM",
+			"CuadradoPSU",
+			"cuadradoplacabase",
+			"cuadradodisipadorCPU",
+			"cuadradoTarjetagrafica",
+			"cuadradoCPU"
 		],
 		"subfolders": []
 	},
@@ -53,13 +129,17 @@
 	},
 	"layouts": {
 		"items": [
-			"Layout 1"
+			"Escena 1",
+			"Escena 3",
+			"Escena 2"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
-			"Event sheet 1"
+			"Hoja de eventos 1",
+			"Hoja de eventos 3",
+			"Hoja de eventos 2"
 		],
 		"subfolders": []
 	},
@@ -87,63 +167,90 @@
 		"icon": {
 			"items": [
 				{
-					"name": "icon-16.png",
+					"name": "logo-carga.png",
 					"type": "image/png",
-					"sid": 730571742467435,
-					"icon-info": {
-						"purpose": "app-icon"
-					}
-				},
-				{
-					"name": "icon-32.png",
-					"type": "image/png",
-					"sid": 211635193461016,
-					"icon-info": {
-						"purpose": "app-icon"
-					}
-				},
-				{
-					"name": "icon-114.png",
-					"type": "image/png",
-					"sid": 161343340267171,
-					"icon-info": {
-						"purpose": "app-icon"
-					}
-				},
-				{
-					"name": "icon-128.png",
-					"type": "image/png",
-					"sid": 468284002621444,
-					"icon-info": {
-						"purpose": "app-icon"
-					}
-				},
-				{
-					"name": "icon-256.png",
-					"type": "image/png",
-					"sid": 806955666313947,
-					"icon-info": {
-						"purpose": "app-icon"
-					}
-				},
-				{
-					"name": "loading-logo.png",
-					"type": "image/png",
-					"sid": 346642658702243,
+					"sid": 279295187972606,
 					"icon-info": {
 						"purpose": "loading-logo"
+					}
+				},
+				{
+					"name": "icono-16.png",
+					"type": "image/png",
+					"sid": 756071896216386,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icono-128.png",
+					"type": "image/png",
+					"sid": 224683781232545,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icono-256.png",
+					"type": "image/png",
+					"sid": 457820938462759,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icono-32.png",
+					"type": "image/png",
+					"sid": 884997799612424,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icono-64.png",
+					"type": "image/png",
+					"sid": 373819394300941,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icono-512.png",
+					"type": "image/png",
+					"sid": 755610386822998,
+					"icon-info": {
+						"purpose": "app-icon"
 					}
 				}
 			],
 			"subfolders": []
 		},
 		"general": {
-			"items": [],
+			"items": [
+				{
+					"name": "questions10Ex.json",
+					"type": "application/json",
+					"sid": 705553301112136,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "QuestionJSONFormat.zip",
+					"type": "application/zip",
+					"sid": 594695765002722,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		}
 	},
 	"timelines": {
-		"items": [],
+		"items": [
+			"Línea de tiempo 1"
+		],
 		"subfolders": [
 			{
 				"items": [],
@@ -156,8 +263,8 @@
 		"version": "1.0.0.0",
 		"author": "",
 		"authorEmail": "",
-		"authorWebsite": "http://",
-		"appId": "com.mycompany.myapp",
+		"authorWebsite": "",
+		"appId": "",
 		"pixelRounding": false,
 		"zAxisScale": "normalized",
 		"fov": 0.7853981633974483,
@@ -166,15 +273,15 @@
 		"fullscreenQuality": "high",
 		"viewportFit": "auto",
 		"backgroundColor": [
-			0,
-			0,
-			0,
+			0.4392156862745098,
+			0.2980392156862745,
+			0.403921568627451,
 			0
 		],
 		"splashColor": [
-			1,
-			1,
-			1,
+			0.5019607843137255,
+			0.30196078431372547,
+			0.41568627450980394,
 			0
 		],
 		"useThemeColor": false,
@@ -184,7 +291,7 @@
 			1,
 			0
 		],
-		"orientations": "any",
+		"orientations": "landscape",
 		"webgpu": "auto",
 		"gpuPreference": "high-performance",
 		"scriptsType": "module",
@@ -195,14 +302,14 @@
 		"renderingMode": "auto",
 		"anisotropicFiltering": "auto",
 		"maxSpriteSheetSize": 2048,
-		"loaderStyle": "progress-logo",
+		"loaderStyle": "splash",
 		"preloadSounds": true,
 		"cordovaiOSScheme": "app",
 		"cordovaAndroidScheme": "https",
 		"autoReloadScriptsOnPreview": false,
 		"exportFileStructure": "folders"
 	},
-	"viewportWidth": 854,
+	"viewportWidth": 900,
 	"viewportHeight": 480,
 	"firstLayout": null
 }
